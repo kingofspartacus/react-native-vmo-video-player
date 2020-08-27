@@ -22,6 +22,16 @@ const result = await VideoPlayer.multiply(3, 7);
 
 See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
 
+## Config Husky
+`
+"husky": {
+  "hooks": {
+    "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+    "pre-commit": "yarn lint && yarn typescript"
+  }
+},
+`
+
 ## License
 
 MIT

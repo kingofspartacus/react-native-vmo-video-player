@@ -1,25 +1,27 @@
 import * as React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, Dimensions } from 'react-native';
 import VideoPlayer from '@vmo-community/video-player';
 
+const { width, height } = Dimensions.get('window');
+
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
-  React.useEffect(() => {
-    VideoPlayer.multiply(3, 7).then(setResult);
-  }, []);
-
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <VideoPlayer
+        style={styles.container}
+        source={{
+          uri:
+            'http://demo.unified-streaming.com/video/tears-of-steel/tears-of-steel.ism/.m3u8',
+        }}
+        controls
+      />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+    width,
+    height,
   },
 });

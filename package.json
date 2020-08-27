@@ -34,13 +34,13 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/react-native-vmo-video-player/vmo-community-video-player",
+  "repository": "https://github.com/react-native-vmo-video-player",
   "author": "Nông Thân <than.nong@vmodev.com> (https://github.com/react-native-vmo-video-player)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/react-native-vmo-video-player/vmo-community-video-player/issues"
+    "url": "https://github.com/react-native-vmo-video-player/issues"
   },
-  "homepage": "https://github.com/react-native-vmo-video-player/vmo-community-video-player#readme",
+  "homepage": "https://github.com/react-native-vmo-video-player#readme",
   "devDependencies": {
     "@commitlint/config-conventional": "^8.3.4",
     "@react-native-community/bob": "^0.16.2",
@@ -75,7 +75,6 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "pre-commit": "yarn lint && yarn typescript"
     }
   },
@@ -119,7 +118,10 @@
       ]
     }
   },
-  "eslintIgnore": ["node_modules/", "lib/"],
+  "eslintIgnore": [
+    "node_modules/",
+    "lib/"
+  ],
   "prettier": {
     "quoteProps": "consistent",
     "singleQuote": true,
@@ -130,6 +132,16 @@
   "@react-native-community/bob": {
     "source": "src",
     "output": "lib",
-    "targets": ["commonjs", "module", "typescript"]
+    "targets": [
+      "commonjs",
+      "module",
+      "typescript"
+    ]
+  },
+  "dependencies": {
+    "@types/keymirror": "^0.1.1",
+    "keymirror": "^0.1.1",
+    "prop-types": "^15.7.2",
+    "shaka-player": "^3.0.3"
   }
 }
