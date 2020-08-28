@@ -1,0 +1,1 @@
+{"version":3,"sources":["text-track-type.ts"],"names":["SRT","TTML","VTT"],"mappings":"AAAA,eAAe;AACbA,EAAAA,GAAG,EAAE,sBADQ;AAEbC,EAAAA,IAAI,EAAE,sBAFO;AAGbC,EAAAA,GAAG,EAAE;AAHQ,CAAf","sourcesContent":["export default {\n  SRT: 'application/x-subrip',\n  TTML: 'application/ttml+xml',\n  VTT: 'text/vtt',\n};\n"]}

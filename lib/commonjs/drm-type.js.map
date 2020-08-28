@@ -1,0 +1,1 @@
+{"version":3,"sources":["drm-type.ts"],"names":["WIDEVINE","PLAYREADY","CLEARKEY","FAIRPLAY"],"mappings":";;;;;;eAAe;AACbA,EAAAA,QAAQ,EAAE,UADG;AAEbC,EAAAA,SAAS,EAAE,WAFE;AAGbC,EAAAA,QAAQ,EAAE,UAHG;AAIbC,EAAAA,QAAQ,EAAE;AAJG,C","sourcesContent":["export default {\n  WIDEVINE: 'widevine',\n  PLAYREADY: 'playready',\n  CLEARKEY: 'clearkey',\n  FAIRPLAY: 'fairplay',\n};\n"]}

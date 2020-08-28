@@ -1,0 +1,1 @@
+{"version":3,"sources":["video-resize-mode.ts"],"names":["contain","cover","stretch"],"mappings":";;;;;;;AAAA;;;;eAEe,wBAAU;AACvBA,EAAAA,OAAO,EAAE,IADc;AAEvBC,EAAAA,KAAK,EAAE,IAFgB;AAGvBC,EAAAA,OAAO,EAAE;AAHc,CAAV,C","sourcesContent":["import keyMirror from 'keymirror';\n\nexport default keyMirror({\n  contain: null,\n  cover: null,\n  stretch: null,\n});\n"]}
